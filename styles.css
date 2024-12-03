@@ -1,0 +1,95 @@
+/* Globální styly */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Kontejner pro obsah stránky */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hlavička */
+header h1 {
+    color: #2c82ff;
+    margin-bottom: 20px;
+}
+
+/* Výběr mentorů */
+.mentor-selection {
+    margin-bottom: 20px;
+}
+
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mentor {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #2c82ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1a60b3;
+}
+
+/* Výběr tréninkového scénáře */
+.training-selection {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Tlačítko pro zahájení tréninku */
+.start-session button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-session button:hover {
+    background-color: #218838;
+}
+
+/* Potvrzení */
+.confirmation {
+    margin-top: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trénink s Mentorem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Trénink s Mentorem</h1>
+        </header>
+
+        <div class="mentor-selection">
+            <h2>Vyberte mentora dle dostupnosti</h2>
+            <div class="mentor-list">
+                <div class="mentor">
+                    <p><strong>Mentor 1</strong></p>
+                    <p>Dostupnost: 14:00 - 16:00</p>
+                    <button class="select-mentor" onclick="selectMentor('Mentor 1')">Vybrat Mentora</button>
+                </div>
+                <div class="mentor">
+                    <p><strong>Mentor 2</strong></p>
+                    <p>Dostupnost: 16:30 - 18:00</p>
+                    <button class="select-mentor" onclick="selectMentor('Mentor 2')">Vybrat Mentora</button>
+                </div>
+                <div class="mentor">
+                    <p><strong>Mentor 3</strong></p>
+                    <p>Dostupnost: 19:00 - 21:00</p>
+                    <button class="select-mentor" onclick="selectMentor('Mentor 3')">Vybrat Mentora</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="training-selection">
+            <h2>Vyberte tréninkovou scénu</h2>
+            <select id="training-scenario">
+                <option value="parkovani">Parkování</option>
+                <option value="nocni_rizeni">Noční řízení</option>
+                <option value="trening_brzdovani">Trénink dobržďování</option>
+                <option value="dálnice">Řízení na dálnici</option>
+            </select>
+        </div>
+
+        <div class="start-session">
+            <button onclick="startTraining()">Začít trénink</button>
+        </div>
+
+        <div class="confirmation" id="confirmation"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
